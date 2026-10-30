@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop smartphones at Lewis Phones. Discover quality smartphones at competitive prices.">
+    <title>Lewis Phones | Online Phone Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">LEWIS<span>PHONES.</span></a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Phones</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-button" id="cart-button" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">WELCOME TO LEWIS PHONES</span>
+
+                    <h1>Find Your Perfect <span>Smartphone.</span></h1>
+
+                    <p>
+                        Discover the latest smartphones from your favourite brands.
+                        Quality devices, competitive prices and a better shopping experience.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn primary-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="#deals" class="btn outline-btn">View Deals</a>
+                    </div>
+
+                    <div class="hero-benefits">
+                        <div>
+                            <i class="fas fa-truck"></i>
+                            <span>Delivery available</span>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Quality products</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-circle"></div>
+                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=700" alt="Modern smartphone">
+                    <div class="hero-label">
+                        <span>NEW COLLECTION</span>
+                        <h3>Latest Smartphones</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="categories section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>SHOP BY BRAND</span>
+                    <h2>Popular <span>Brands</span></h2>
+                </div>
+
+                <div class="brand-container">
+
+                    <button class="brand-card active" data-brand="All">
+                        <i class="fas fa-mobile-screen"></i>
+                        <span>All Phones</span>
+                    </button>
+
+                    <button class="brand-card" data-brand="Apple">
+                        <i class="fab fa-apple"></i>
+                        <span>Apple</span>
+                    </button>
+
+                    <button class="brand-card" data-brand="Samsung">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Samsung</span>
+                    </button>
+
+                    <button class="brand-card" data-brand="Tecno">
+                        <i class="fas fa-mobile"></i>
+                        <span>Tecno</span>
+                    </button>
+
+                    <button class="brand-card" data-brand="Infinix">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <span>Infinix</span>
+                    </button>
+
+                    <button class="brand-card" data-brand="Xiaomi">
+                        <i class="fas fa-mobile"></i>
+                        <span>Xiaomi</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="products section" id="products">
+
+            <div class="container">
+
+                <div class="products-heading">
+
+                    <div class="section-title">
+                        <span>OUR COLLECTION</span>
+                        <h2>Featured <span>Phones</span></h2>
+                    </div>
+
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search phones...">
+                    </div>
+
+                </div>
+
+                <div class="products-grid" id="products-grid"></div>
+
+                <p class="empty-message" id="empty-message">
+                    No phones found. Try another search.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="deal-banner" id="deals">
+
+            <div class="container deal-container">
+
+                <div>
+                    <span>LIMITED TIME OFFER</span>
+                    <h2>Upgrade Your Phone Today!</h2>
+                    <p>Explore our smartphone collection and find your next device.</p>
+                    <a href="#products" class="btn white-btn">Shop Collection</a>
+                </div>
+
+                <div class="deal-icon">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="why-us section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>WHY CHOOSE US</span>
+                    <h2>Shopping Made <span>Easy</span></h2>
+                </div>
+
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+                        <i class="fas fa-mobile-screen"></i>
+                        <h3>Quality Phones</h3>
+                        <p>Explore smartphones from popular brands.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fas fa-tags"></i>
+                        <h3>Competitive Prices</h3>
+                        <p>Find devices at prices that suit your budget.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fas fa-truck-fast"></i>
+                        <h3>Delivery</h3>
+                        <p>Contact us to arrange delivery for your order.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Customer Support</h3>
+                        <p>Get assistance when choosing your smartphone.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact section" id="contact">
+
+            <div class="container contact-container">
+
+                <div>
+                    <span class="contact-tag">GET IN TOUCH</span>
+                    <h2>Need Help Choosing a Phone?</h2>
+                    <p>Contact Lewis Phones and let us help you find the right smartphone.</p>
+                </div>
+
+                <a href="https://wa.me/254707902074" target="_blank" rel="noopener noreferrer" class="btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <a href="#" class="logo">LEWIS<span>PHONES.</span></a>
+                <p>Your destination for smartphones.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Phones</a>
+                <a href="#deals">Deals</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                © <span id="year"></span> Lewis Phones. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+                <button id="close-cart" aria-label="Close cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="cart-items" id="cart-items"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cart-total">KSh 0</strong>
+                </div>
+
+                <button class="checkout-button" id="checkout-button">
+                    Order on WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
